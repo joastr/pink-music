@@ -2,27 +2,37 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="pink flex">
-		<meta name="keywords" content="pink flex">
+		<meta name="description" content="pink music">
+		<meta name="keywords" content="pink music">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>pink flex</title>
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
-		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<title>pink music</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">				</script>
+    	<script src="magnific-popup/jquery.magnific-popup.js"></script>
+    	<script src="https://apis.google.com/js/platform.js" async defer>{lang: 'pl'}</script>
 	</head>
 	<body>
-		<header class="container row">
-			<ul>
-				<li>
-					<a href="#">About</a>
-				</li>
-				<li>
-					<a href="#soul">News</a>
-				</li>
-				<li>
-					<a href="#player">Our Idols</a>
-				</li>
-			</ul>
-		</header>
+       <header>
+    	<nav class="navbar navbar-default navbar-fixed-top">
+        		<div class="container">
+                	<ul class="nav navbar-nav">
+            			<li>
+                			<a href="#quote" class="anchor">About</a>
+                		</li>
+                        <li>
+                			<a href="#soul" class="anchor">News</a>
+                		</li>
+                		<li>
+                			<a href="#player" class="anchor">Our Idols</a>
+                		</li>
+            		</ul>
+        		</div>
+        	</nav>
+    </header>
 		<main>
 			<section class="jumbotron button1">
 				<div id="waveThree" class="waveBox"></div>
@@ -33,7 +43,7 @@
 					<i class="fa fa-music" aria-hidden="true"></i>
 				</div>
 			</section>
-			<section class="quote row">
+			<section class="quote row" id="quote">
 				<blockquote>
 					<p>Without music, life would be a mistake.</p>
 					<cite>Friedrich Nitzsche, Twilight of the Idols</cite>
@@ -42,29 +52,41 @@
 			<section class="gallery" id="player">
 				<div class="gallery1 row">
 					<div class="photo">
+                    	<a class="image-popup-vertical-fit" href="L-trumpet.jpg">
 						<img src="http://www.ink.media.pl/photo/trumpet.png" alt="walking man with trumpet" title="walking man with trumpet">
+                        </a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id quam vitae ligula consequat iaculis.</p>
 					</div>
 					<div class="photo">
+                    	<a class="image-popup-vertical-fit" href="L-guitar.jpg">
 						<img src="http://www.ink.media.pl/photo/guitar.png" alt="cowboy with guitar" title="cowboy with guitar">
+                        </a>
 						<p>Vestibulum at rhoncus erat, ut mattis libero. Duis eget interdum mauris, sed volutpat nibh.</p>
 					</div>
 					<div class="photo">
+                    	<a class="image-popup-vertical-fit" href="L-harp.jpeg">
 						<img src="http://www.ink.media.pl/photo/harp.png" alt="harp on the street" title="harp on the street">
+                        </a>
 						<p>Proin nec augue ac diam facilisis placerat sed posuere nulla. Nulla at massa lorem. Mauris rutrum eget augue nec dignissim.</p>
 					</div>
 				</div>
 				<div class="gallery2 row">
 					<div class="photo">
+                    	<a class="image-popup-vertical-fit" href="L-accordion.jpeg">
 						<img src="http://www.ink.media.pl/photo/accordion.png" alt="accordion" title="accordion">
+                        </a>
 						<p>Sed non orci metus. Vestibulum erat leo, tristique quis porta tincidunt, volutpat at nisl. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
 					</div>
 					<div class="photo">
+                    	<a class="image-popup-vertical-fit" href="L-drum.jpg">
 						<img src="http://www.ink.media.pl/photo/drum.png" alt="playing drums on the market" title="playing drums on the market">
+                        </a>
 						<p>Sed porttitor ex metus, a tempus sem aliquam a. Integer placerat in nunc vitae pellentesque. Sed consectetur felis sed augue rhoncus.</p>
 					</div>
 					<div class="photo">
+                    	<a class="image-popup-vertical-fit" href="L-pipe.jpg">
 						<img src="http://www.ink.media.pl/photo/pipe.png" alt="Indian who plays pipe" title="Indian who plays pipe">
+                        </a>
 						<p>Curabitur vel sagittis mauris, vel tincidunt ex. Etiam et odio tincidunt, placerat risus non, sagittis nisl. Quisque maximus a mi ut rutrum.</p>
 					</div>
 				</div>
@@ -73,15 +95,68 @@
 				<div class="headline"><h2>What plays in my soul?</h2></div>
 				<div class="note"><img src="http://www.ink.media.pl/photo/cello.jpg" alt="note" title="note">
 				</div>
-				<div class="text40">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae mauris in dolor malesuada imperdiet. Fusce finibus bibendum lectus, id blandit magna interdum eu. Suspendisse potenti. Sed scelerisque est eget elit ornare mollis. Suspendisse potenti. Mauris sit amet porta sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis maximus mollis volutpat. Phasellus odio nunc, fermentum nec finibus sit amet, efficitur feugiat arcu.
-						Morbi dapibus elit et iaculis tempus. Nam mollis augue at ante egestas fermentum. Donec laoreet risus ac ligula scelerisque, non elementum lectus molestie. Cras vel commodo dui. Vestibulum nec nulla luctus libero scelerisque vestibulum. Pellentesque tincidunt accumsan euismod. Morbi at diam ac leo sagittis eleifend. Sed sit amet tellus suscipit, dapibus ligula quis, imperdiet ligula. Praesent rhoncus sapien nec felis suscipit accumsan. Vivamus sit amet laoreet arcu. Etiam gravida nec arcu eget vehicula. Donec ac dignissim justo, in egestas ante. Praesent tristique luctus odio a mattis. 
-					</p>
-				</div>
-				<div class="text20">
-					<p>Nullam vestibulum sollicitudin neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet purus sapien. Integer ornare tincidunt ornare. Duis venenatis nibh at libero dictum.
-					</p>
-				</div>
+                <!--<div class="text-soul">--> 
+					<div class="text60">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae mauris in dolor malesuada imperdiet. Fusce finibus bibendum lectus, id blandit magna interdum eu. Suspendisse potenti. Sed scelerisque est eget elit ornare mollis. Suspendisse potenti. Mauris sit amet porta sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis maximus mollis volutpat. Phasellus odio nunc, fermentum nec finibus sit amet, efficitur feugiat arcu.
+						Morbi dapibus elit et iaculis tempus. Nam mollis augue at ante egestas fermentum. Donec laoreet risus ac ligula scelerisque, non elementum lectus molestie. Cras vel commodo dui. Vestibulum nec nulla luctus libero scelerisque vestibulum.
+						</p>
+						<br/>
+					
+						<p>Nullam vestibulum sollicitudin neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet purus sapien. Integer ornare tincidunt ornare. Duis venenatis nibh at libero dictum.
+						</p>
+					</div>
+                    <div class="drum">
+                    	<h3>You can also play. Play on keyboard ...</h3>
+                        <div class="keys">
+    						<div data-key="65" class="key">
+      							<kbd>A</kbd>
+      							<span class="sound">clap</span>
+    						</div>
+    						<div data-key="83" class="key">
+      							<kbd>S</kbd>
+      							<span class="sound">hihat</span>
+    						</div>
+    						<div data-key="68" class="key">
+      							<kbd>D</kbd>
+      							<span class="sound">kick</span>
+    						</div>
+    						<div data-key="70" class="key">
+      							<kbd>F</kbd>
+      							<span class="sound">openhat</span>
+    						</div>
+    						<div data-key="71" class="key">
+      							<kbd>G</kbd>
+      							<span class="sound">boom</span>
+    						</div>
+    						<div data-key="72" class="key">
+      							<kbd>H</kbd>
+      							<span class="sound">ride</span>
+    						</div>
+    						<div data-key="74" class="key">
+      							<kbd>J</kbd>
+      							<span class="sound">snare</span>
+    						</div>
+    						<div data-key="75" class="key">
+      							<kbd>K</kbd>
+      							<span class="sound">tom</span>
+    						</div>
+    						<div data-key="76" class="key">
+      							<kbd>L</kbd>
+      							<span class="sound">tink</span>
+    						</div>
+  						</div>
+
+  						<audio data-key="65" src="sounds/clap.wav"></audio>
+  						<audio data-key="83" src="sounds/hihat.wav"></audio>
+  						<audio data-key="68" src="sounds/kick.wav"></audio>
+  						<audio data-key="70" src="sounds/openhat.wav"></audio>
+  						<audio data-key="71" src="sounds/boom.wav"></audio>
+  						<audio data-key="72" src="sounds/ride.wav"></audio>
+  						<audio data-key="74" src="sounds/snare.wav"></audio>
+  						<audio data-key="75" src="sounds/tom.wav"></audio>
+  						<audio data-key="76" src="sounds/tink.wav"></audio>
+                    </div>
+            	<!--</div>-->
 			</section>			
 			<section class="cards row">
 				<div class="press">
@@ -89,62 +164,66 @@
 				</div>
 				<div>
 					<div class="sing">
-						<a href="#">Band</a>
+						<a href="https://www.youtube.com/watch?v=NCtzkaL2t_Y" target="_blank">Band</a>
 					</div>	
 				</div>
 				<div>
 					<div class="instruments">
-						<a href="#">Violin</a>
+						<a href="https://www.youtube.com/watch?v=kTZ2NXtD-AU&index=3&list=PLfvUiWXo0lNZHsp6scSaLUH-sZO4q_fYE" target="_blank">Violin</a>
 					</div>
 				</div>
 				<div>
 					<div class="sing">
-						<a href="#">Chorus</a>
+						<a href="https://www.youtube.com/watch?v=VPpd-6X3tEo" target="_blank">Chorus</a>
 					</div>	
 				</div>
 				<div>
 					<div class="instruments">
-						<a href="#">Piano</a>
+						<a href="https://www.youtube.com/watch?v=gfsgXJQ0ebU" target="_blank">Piano</a>
 					</div>
 				</div>
 				<div>
 					<div class="sing">
-						<a href="#">Concert</a>
+						<a href="https://www.youtube.com/watch?v=x3aGlKYlEiY&list=RDzN3-ceLKGLM&index=14" target="_blank">Concert</a>
 					</div>	
 				</div>
 				<div>
 					<div class="instruments">
-						<a href="#">Guitar</a>
+						<a href="https://www.youtube.com/watch?v=bwlOPnc5VSY" target="_blank">Guitar</a>
 					</div>
 				</div>
 				<div>
 					<div class="sing">
-						<a href="#">Soloist</a>
+						<a href="https://www.youtube.com/watch?v=PAD_E1kaYuY" target="_blank">Soloist</a>
 					</div>
 				</div>
 				<div>
 					<div class="instruments">
-						<a href="#">Trumpet</a>	
+						<a href="https://www.youtube.com/watch?v=DJaYXU2vB7U" target="_blank">Trumpet</a>	
 					</div>
 				</div>
 				<div>
 					<div class="sing">
-						<a href="#">Orchestra</a>
+						<a href="https://www.youtube.com/watch?v=Dzg2o1WCHHE" target="_blank">Orchestra</a>
 					</div>	
 				</div>
 				<div>
 					<div class="instruments">
-						<a href="#">Drum</a>
+						<a href="https://www.youtube.com/watch?v=MHj9XlV3fFg" target="_blank">Drum</a>
 					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="row">
-			<section class="copyright"><p>Projekt & wykonanie 2016 Joast.pl</p></section>
-			<section class="name"><p>PINK MUSIC LTD.</p></section>
-			<section class="address">
-				<p> P.O Boy 725, Tampa, FL 33785 USA</p>
-			</section>
+        	<section class="all-footer">
+				<section class="copyright"><p>Projekt & wykonanie 2018 Joast.pl</p></section>
+				<section class="name"><p>PINK MUSIC SP. Z O.O.</p></section>
+				<section class="address">
+					<p>45-222 OPOLE PL</p>
+				</section>
+            </section>    
 		</footer>
+      
+        <script type="text/javascript" src="js/scripts.js"></script>
 	</body>
 </html>

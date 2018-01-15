@@ -5,42 +5,67 @@ body {
 	margin: 0;
 }
 
+h1, h2, h3, h4, h5 {
+	font-family: 'Poiret One', cursive; 
+}
+
+
+* {
+	outline: none!important;
+	text-decoration: none!important;
+}
+
+*:hover, *:focus, *:visited, *.active, *.focus, *.visited {
+    outline-style: none!important;
+    outline: none!important; 
+}
+
+
+
+.row:before, .row:after {
+	display: table;
+	content: "";
+}
+
+.row:after {
+	clear: both;
+}
+
+
 .container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
 	background-color: #000;
 	margin: 0;
 	padding: 0;
+	width: 100vw;
 }	
 
-
-header > ul {
-	display: flex;	
-	margin-right: 5%;
+.navbar-default {
+	border: none;
 }
 
-header > ul > li {
-	list-style-type: none;
-	padding: 0 20px;
+.navbar-nav {
+    float: right;
+    margin: 0;
+    padding-right: 50px;
 }
 
-header > ul > li > a {
-	text-decoration: none;
-	color: #fff;
-	font-family: 'Poiret One', cursive;
-	font-size: 1.2em;
-	font-weight: bold;
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-family: "Poiret One",cursive;
+    font-size: 1.4em;
 }
 
-header > ul > li > a:hover {
+.navbar-default .navbar-nav>li>a:visited {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover   {
 	color: #EF6E87;
 }
 
 
 
 .jumbotron h1 {
-	font-family: 'Poiret One', cursive;
 	color: #fed4e3;
 	font-size: 4em;
 	padding-right: 10%;
@@ -200,6 +225,122 @@ content: "\2014 \2009";
 	text-align: center;
 }
 
+
+/*WHAT PLAYS IN MY SOUL?*/
+
+.text {
+	
+	margin: 5% 0;
+	background-color: #625e5f;
+	padding: 5% 5%;
+}
+
+
+.headline {
+	width: 100%;
+	float: left;
+}
+
+.headline h2 {
+	font-family: 'Poiret One', cursive;
+	font-size: 2.5em;
+	font-weight: bold;
+	margin: 0 auto;
+	margin-bottom: 5%;
+	padding: 0;
+	color: #fff;
+}
+
+	
+.note {
+	display: inline-block;
+	float: left;
+	width: 30%;
+}
+
+.note img {
+	border: 25px solid #999;
+	text-align: center;
+}
+
+/*.text-soul {
+	flex: 75%;
+	display: flex;
+	flex-wrap: wrap;
+}
+*/
+.text60 {
+	width: 67%;
+	float: left;
+	display: inline-block;
+}
+
+.text60 p {
+	margin: 0;
+	line-height: 150%; 
+	font-family: verdana, sans-serif;
+	color: #fff;
+}
+
+
+
+.drum {
+	display: inline-block
+}
+
+.drum h3 {
+	color: #fff;
+	font-size: 2em;
+	margin-top: 50px;
+}
+
+
+.keys {
+ margin-top: 40px;
+ text-align: center;
+}
+
+.key {
+    border-radius: 50%;
+    margin: 7px;
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    font-size: x-small;
+    padding: 2em;
+    transition: all .07s ease;
+    width: 11em;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.12);
+    display: inline-block;
+}
+
+.playing {
+  	transform: scale(1.1);
+  	border-color:#fc9fb1;
+  	box-shadow: 0 0 1rem #fc9fb1;
+}
+
+kbd {
+    display: block;
+    font-size: 3.5em;
+    font-family: "Poiret One",cursive;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.sound {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fc9fb1;
+}
+
+
+/*PRESS BUTTON*/
+
 .cards {
 	display: flex;
 	flex-wrap: wrap;
@@ -213,7 +354,6 @@ content: "\2014 \2009";
 }
 
 .press h3 {
-	font-family: 'Poiret One', cursive; 
 	font-weight: bold;
 	font-size: 3em;
 	margin-top: 18px;
@@ -279,163 +419,185 @@ content: "\2014 \2009";
 	line-height: 100px;
 }
 
-.text {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 5% 0;
-	background-color: #625e5f;
-	padding: 5% 5%;
-}
 
-.headline {
-	flex: 100%;
-}
 
-.headline h2 {
-	font-family: 'Poiret One', cursive;
-	font-size: 2.5em;
-	font-weight: bold;
-	margin: 0 auto;
-	margin-bottom: 5%;
-	padding: 0;
-	color: #fff;
-}
-	
-.note {
-	flex: 1;
-}
 
-.note img {
-	border: 25px solid #999;
-	text-align: center;
-}
+/*FOOTER*/
 
-.text40 {
-	flex: 2;
-	padding: 0 3%;
-}
-
-.text40 p,
-.text20 p {
-	margin: 0;
-	line-height: 150%; 
-	font-family: verdana, sans-serif;
-	color: #fff;
-}
-
-.text20 {
-	flex: 1;
-}
-
-footer {
+.all-footer {
 	background-color: #2a2a2a;
 	color: #999;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	align-items: center;
 	font-family: verdana, sans-serif;
 	justify-content: space-around;
-	font-size: 0.8em;
+	font-size: 1em;
 	font-weight: 100;
 	margin-top: 5%;
+	padding: 10px 40px;
 }
 
-.copyright,
-.address {
-	flex-grow: 1;
+
+.address p, .name p, .copyright p {
+	margin: 0;
+	padding: 0;
 	text-align: center;
 }
+/*--------------------------------MEDIA----------------------------------------------------------*/
 
-.name {
-	flex-grow: 2;
-	text-align: center;	
+@media (max-width: 350px) {
+	.photo p {
+		width: 300px;
+	}
 }
 
-.address p {
-	margin: 0;
+
+@media (max-width: 767px) {
+	
+	
+	.navbar-fixed-top {
+		position: static;
+	}
+	
+	.navbar {
+		margin-bottom: 0px;
+	}
+	
+	.navbar-nav {
+		text-align: center;
+		padding-right: 0;
+		float: none;
+	}
+	
+	.music {
+		padding: 90px
+	}
+	
+	.music i {
+		color: #2a2a2a;
+		padding-top: 40px;
+	}
+	
+	.jumbotron h1 {
+		color: #000000;
+		text-align: center;
+	}
+	
+	blockquote p {
+		font-size: 2em;
+	}
+	
+	.headline {
+		text-align: center;
+	}
+	
+	.note {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.note img {
+		max-width: 300px;
+	}
+	
+	.text60 {
+		width: 100%;
+		padding: 0 5%;
+	}
+	
+	.drum h3{
+		padding: 0 5%;
+		text-align: center;
+	}
+	
+	.press h3 {
+		padding: 0 30px;
+	}
+	
+	.text60 p:first-child {
+		margin-top: 30px;
+	}
+	
+	.photo {
+		padding: 14px;
+	}
+	
+	.photo img {
+		border: 12px solid #ffdce3;
+	}
+		
+	.all-footer {
+	
+		font-size: 0.8em;
+	}
 }
 	
-@media (max-width: 767px) {
 
-.music {  
-    padding: 0 10%;
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+	.music i {
+		color: #000000;
+		padding-top: 30px;
+	}
+
+	.music h1 {
+  		color: #000000;
+  		font-size: 3.5em;
+		font-weight: bolod;
+	}
+	
+	blockquote {
+		margin: 1.5em 30px;
+	}
+	
+	.headline h2 {
+		text-align: center;
+	}
+	
+	.note {
+		width: 50%;
+	}
+	
+	.note img {
+		border: 15px solid #999;
+	}
+	
+	.text60 {
+		width: 48%;
+	}
+	
+	.drum h3 {
+		text-align: center;
+	}
+	
+
 }
 
-.music i {
-	color: #2a2a2a;
-}
+@media (min-width: 1025px) and (max-width: 1366px){
 
-.music h1 {
-  color: #2a2a2a;
-  font-size: 3.5em;
-}
 
-.photo img,
-.photo p {
-	width: 200px;
-}
-
-.text40,
-.text20,
 .note {
-	flex: 100%
-}
+		width: 35%;
+	}
+	
+	
+	.text60 {
+		width: 64%;
+	}
+	
+	.drum {
+		width: 64%
+	}
 
-.text40 {
-	padding: 3% 0;
-}
 
-.headline,
- .note {
-	text-align: center;
-}
-
-.gallery1 {
-	margin-bottom: 10px;
-}
 
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
 
-.music {  
-    padding: 0 25%;
-}
 
-.music i {
-	color: #2a2a2a;
-}
-
-.music h1 {
-  color: #2a2a2a;
-  font-size: 3.5em;
-}
-
-.photo img,
-.photo p {
-	width: 220px;
-}
-
-.text40,
-.guitar 
-.text20 {
-	flex: 100%
-}
-
-.text40 {
-	padding: 3% 0;
-}
-
-.headline,
-.guitar {
-	text-align: center;
-}
-
-.gallery1 {
-	margin-bottom: 10px;
-}
-}
 
 
